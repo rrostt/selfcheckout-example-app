@@ -1,5 +1,5 @@
 {
-  "name": "selfcheckout-shop",
+  "name": "selfcheckout-example-shop",
   "version": "1.0.0",
   "description": "An example implementation of selfcheckout shop API",
   "main": "index.js",
