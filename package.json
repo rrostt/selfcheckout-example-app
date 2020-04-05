@@ -1,0 +1,22 @@
+{
+  "name": "selfcheckout-shop",
+  "version": "1.0.0",
+  "description": "An example implementation of selfcheckout shop API",
+  "main": "index.js",
+  "scripts": {
+    "offline": "serverless offline --host 0.0.0.0 --skipCacheInvalidation",
+    "deploy": "serverless deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless": "^1.67.0",
+    "serverless-offline": "^6.1.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.3.2"
+  }
+}

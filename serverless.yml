@@ -1,0 +1,33 @@
+org: rrostt
+
+service: selfcheckout-example-shop
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+
+functions:
+  check:
+    handler: lib/handlers.app
+    events:
+      - http:
+          path: /item/{code}
+          method: get
+          request:
+            parameters:
+              paths:
+                code: true
+      - http:
+          path: /payment
+          method: post
+      - http:
+          path: /payment/{id}
+          method: get
+          request:
+            parameters:
+              paths:
+                id: true
